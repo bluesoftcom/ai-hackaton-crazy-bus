@@ -1,0 +1,40 @@
+Rafał Bielicki
+Generate movement controller for a top-down 2d game
+
+1 / 2
+
+Sure, here is an example of a movement controller for a top-down 2D game using Unity:
+
+csharp
+Copy code
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+    public float moveSpeed = 5f; // movement speed of player
+
+    private Rigidbody2D rb;
+
+    private Vector2 movement;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    void Update()
+    {
+        // get horizontal and vertical input
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    void FixedUpdate()
+    {
+        // move the player based on input and move speed
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+}
+This controller uses a Rigidbody2D component to move the player, which allows for more realistic physics-based movement. The Update method gets the horizontal and vertical input from the user using the Input.GetAxisRaw method. The FixedUpdate method moves the player based on the input and the move speed.
+
+You can customize the move speed to your liking, and also add additional functionality to the controller, such as animations or collision detection.

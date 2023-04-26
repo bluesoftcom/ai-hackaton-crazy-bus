@@ -1,0 +1,18 @@
+how to add spritesheet to animator?
+To add a spritesheet to an animator, you'll need to follow these general steps:
+
+Import your spritesheet into your game engine. Most game engines support common image formats such as PNG, JPEG, or GIF.
+
+Create a new animation clip in your game engine's animation window. This can usually be done by selecting the GameObject you want to animate and then clicking on "Create Animation Clip" or similar.
+
+Assign your spritesheet to the animation clip by selecting it in the Assets window and dragging it onto the animation clip's timeline.
+
+Set up the animation frames by slicing the spritesheet into individual frames. This can usually be done by selecting the spritesheet in the Assets window, right-clicking, and selecting "Sprite Editor" or similar. From there, you can define the individual frames by drawing a rectangle around each frame.
+
+Once you have defined the individual frames, you can add them to the animation clip's timeline by dragging them onto the timeline.
+
+Set the animation speed and loop settings. This can usually be done by adjusting the animation clip's properties in the animation window.
+
+Finally, attach the animation clip to the GameObject you want to animate. This can usually be done by selecting the GameObject and then dragging the animation clip onto its Animator component.
+
+The exact steps may vary depending on the game engine you are using, but these general steps should work for most game engines that support spritesheet animation.
